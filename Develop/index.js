@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -31,19 +31,30 @@ const questions = [
       message: 'What did you learn?',
     },
     {
+        type: 'input',
+        name: 'installationSteps',
+        message: 'Provide instructions and examples for installation.',
+      },
+    {
       type: 'input',
       name: 'usageInstructions',
       message: 'Provide instructions and examples for use.',
     },
     {
         type: 'input',
-        name: 'credits',
-        message: 'List any collaborators, third-party assets, or tutorials.',
+        name: 'contributing',
+        message: 'Please provide contribution guidelines.',
     },
     {
         type: 'input',
         name: 'test',
         message: 'Please list your test instructions.',
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Would you like to add a license?',
+        choices: ['MIT License', 'No']
     },
     {
         type: 'input',
