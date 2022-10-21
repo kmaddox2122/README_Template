@@ -33,7 +33,7 @@ Here is an example of the ReadMe Template to be created after your input:
 
 ## Credits
 
-This article was refernced regarding a professional README guide:
+This article was referenced regarding a professional README guide:
 https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 
 ## License
